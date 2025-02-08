@@ -572,7 +572,10 @@ class Listeners {
       },
       'fullscreen',
     );
-
+    
+    // Google cast
+    this.bind(elements.buttons.googlecast, 'click', player.googlecast, 'googlecast');
+    
     // Picture-in-Picture
     this.bind(
       elements.buttons.pip,
